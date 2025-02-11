@@ -3,4 +3,41 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+    <servlet>
+        <servlet-name>StudentRegistration</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.StudentRegistrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentRegistration</servlet-name>
+        <url-pattern>/student_register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherRegistration</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.TeacherRegistrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherRegistration</servlet-name>
+        <url-pattern>/teacher_register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentLogin</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.StudentLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentLogin</servlet-name>
+        <url-pattern>/student_login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherLogin</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.TeacherLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherLogin</servlet-name>
+        <url-pattern>/teacher_login</url-pattern>
+    </servlet-mapping>
+
 </web-app>

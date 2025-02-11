@@ -5,6 +5,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
+import com.amnii.submission.mis.assignmentmanagementsystem.model.*;
 
 import java.util.Properties;
 
@@ -18,9 +19,9 @@ public class HibernateUtility {
 
             // MySQL Configuration
             settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-            settings.put(Environment.URL, "jdbc:mysql://localhost:3306/student_submission?useSSL=false&serverTimezone=UTC");
-            settings.put(Environment.USER, "root");  // Change this if your username is different
-            settings.put(Environment.PASS, "your_mysql_password");  // Replace with your actual MySQL password
+            settings.put(Environment.URL, "jdbc:mysql://localhost:3306/student_submission");
+            settings.put(Environment.USER, "root");
+            settings.put(Environment.PASS, "root");
             settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
 
             settings.put(Environment.SHOW_SQL, true);

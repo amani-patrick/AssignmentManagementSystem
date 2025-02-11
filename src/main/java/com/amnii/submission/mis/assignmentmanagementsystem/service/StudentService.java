@@ -5,6 +5,7 @@ import com.amnii.submission.mis.assignmentmanagementsystem.util.HibernateUtility
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class StudentService {
     protected static SessionFactory sessionFactory= HibernateUtility.getSessionFactory();

@@ -11,7 +11,7 @@ import com.amnii.submission.mis.assignmentmanagementsystem.model.Student;
 
 import java.io.IOException;
 
-@WebServlet(name = "StudentLoginServlet", value = "/StudentLoginServlet")
+@WebServlet("/login")
 public class StudentLoginController extends HttpServlet {
     private String message;
     StudentService service=new StudentService();
@@ -23,18 +23,18 @@ public class StudentLoginController extends HttpServlet {
         String email=request.getParameter("email");
         String password=request.getParameter("password");
         if(category.equals("teacher")){
-            request.getRequestDispatcher("teacher-login").forward(request,response);
+            request.getRequestDispatcher("teacher_login").forward(request,response);
         }
         if (service.login(email, password)) {
             HttpSession session = request.getSession();
-            Student student = service.getStudentByEmail(email); // Fetch student details
+            Student student = service.getStudentByEmail(email);
 
             session.setAttribute("email", email);
             session.setAttribute("studentName", student.getFirstName() + " " + student.getLastName()); // Store full name
             session.setAttribute("successMessage", "Login successful, welcome back " + student.getFirstName());
             session.setMaxInactiveInterval(30 * 60);
 
-            request.getRequestDispatcher("/WEB-INF/welcome.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
         }
         request.setAttribute("message","<p  style='color:red;'>Invalid Credentials</p>");
         request.getRequestDispatcher("/WEB-INF/LoginForm.jsp").forward(request,response);
