@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: amnii
-  Date: 2/11/2025
-  Time: 5:44 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
@@ -83,6 +76,20 @@
     .forgot:hover {
       text-decoration: underline;
     }
+    .register-link {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #007bff;
+    }
+    .register-link:hover {
+      text-decoration: underline;
+    }
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
   </style>
   <script>
     function selectRole(role) {
@@ -106,6 +113,36 @@
     <button type="submit">🚀 Login</button>
     <a href="#" class="forgot">Forgot Password? 🤔</a>
   </form>
+
+  <!-- Display invalid credentials message -->
+  <c:if test="${not empty message}">
+    <div class="error-message">${message}</div>
+  </c:if>
+
+  <!-- Register links based on the role -->
+  <div>
+    <a id="studentRegisterLink" href="student_register" class="register-link" style="display: none;">Not a student? Register here!</a>
+    <a id="teacherRegisterLink" href="teacher_register" class="register-link" style="display: none;">Not a teacher? Register here!</a>
+  </div>
 </div>
+
+<script>
+  // Show the register link based on the selected role
+  function showRegisterLink() {
+    const selectedRole = document.getElementById("role").value;
+    if (selectedRole === "student") {
+      document.getElementById("studentRegisterLink").style.display = "block";
+      document.getElementById("teacherRegisterLink").style.display = "none";
+    } else if (selectedRole === "teacher") {
+      document.getElementById("teacherRegisterLink").style.display = "block";
+      document.getElementById("studentRegisterLink").style.display = "none";
+    }
+  }
+
+  // Trigger the role selection
+  document.querySelectorAll(".role").forEach(roleElement => {
+    roleElement.addEventListener("click", showRegisterLink);
+  });
+</script>
 </body>
 </html>

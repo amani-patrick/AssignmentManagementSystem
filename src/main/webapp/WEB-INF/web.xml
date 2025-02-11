@@ -4,6 +4,7 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
+    <!-- Define servlets for various pages -->
     <servlet>
         <servlet-name>StudentRegistration</servlet-name>
         <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.StudentRegistrationController</servlet-class>
@@ -39,5 +40,10 @@
         <servlet-name>TeacherLogin</servlet-name>
         <url-pattern>/teacher_login</url-pattern>
     </servlet-mapping>
+
+    <!-- Set the default landing page -->
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/LoginForm.jsp</welcome-file> <!-- Corrected the path -->
+    </welcome-file-list>
 
 </web-app>

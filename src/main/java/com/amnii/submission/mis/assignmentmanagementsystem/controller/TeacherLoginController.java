@@ -26,13 +26,13 @@ public class TeacherLoginController extends HttpServlet {
         if(category.equals("student")){
             req.getRequestDispatcher("/WEB-INF/LoginForm.jsp").forward(req,res);
         }
-        if(service.Login(email,password)){
+        if(service.login(email,password)){
             HttpSession session = req.getSession();
             session.setAttribute("email",email);
             session.setAttribute("teacherName", teacher.getFirstName() + " " + teacher.getLastName());
             session.setAttribute("successMessage","Login successful welcome back ");
             session.setMaxInactiveInterval(30 * 60);
-            req.getRequestDispatcher("/WEB-INF/teacherDashboard..jsp").forward(req,res);
+            req.getRequestDispatcher("/WEB-INF/TeacherDashboard.jsp").forward(req,res);
         }
         req.setAttribute("message","<p  style='color:red;'>Invalid Credentials</p>");
         req.getRequestDispatcher("/WEB-INF/LoginForm.jsp").forward(req,res);
