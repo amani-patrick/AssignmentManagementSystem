@@ -10,14 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde0e890-d7f0-403f-88e7-4da318ac9046" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/AssignmentCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/model/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/AssignmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/CreateAssignment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/StudentRegister.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TeacherRegistration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/StudentLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/StudentLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/StudentRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/StudentRegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherLoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/util/HibernateUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/util/HibernateUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/LoginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/LoginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/RegisterForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TeacherDashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TeacherDashboard.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +86,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -154,7 +167,8 @@
       <option name="presentableId" value="Default" />
       <updated>1739280434854</updated>
       <workItem from="1739280436064" duration="9974000" />
-      <workItem from="1739298762601" duration="2714000" />
+      <workItem from="1739298762601" duration="2907000" />
+      <workItem from="1739346582217" duration="15793000" />
     </task>
     <servers />
   </component>

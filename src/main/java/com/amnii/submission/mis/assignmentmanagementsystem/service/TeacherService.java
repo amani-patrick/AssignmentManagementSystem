@@ -40,21 +40,29 @@ public class TeacherService {
             Query<Long> query = session.createQuery(
                     "SELECT COUNT(t) FROM Teacher t WHERE t.email = :email", Long.class);
             query.setParameter("email", email);
+            query.setMaxResults(1);
             return query.uniqueResult() > 0;
         }
     }
 
     public Teacher getTeacherByEmail(String email) {
         try (Session session = sessionFactory.openSession()) {
-            Query<Teacher> query = session.createQuery(
-                    "FROM Teacher t WHERE t.email = :email", Teacher.class);
+            Query<Teacher> query = session.createQuery("FROM Teacher WHERE email = :email", Teacher.class);
             query.setParameter("email", email);
-            return query.uniqueResult(); // Might return null
+
+            return query.uniqueResult();
         }
     }
 
     public boolean login(String email, String password) {
         Teacher teacher = getTeacherByEmail(email);
-        return teacher != null && BCrypt.checkpw(password, teacher.getPassword());
+
+        if (teacher == null) {
+            System.out.println("Teacher not found with email: " + email);
+            return false;
+        }
+
+        // Compare hashed password with provided password
+        return BCrypt.checkpw(password, teacher.getPassword());
     }
 }

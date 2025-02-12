@@ -35,7 +35,8 @@
                 📩 Submitted Work
             </li>
             <li class="flex items-center gap-3 py-3 px-4 hover:bg-gray-700 rounded cursor-pointer">
-                ➕ New Assignment
+                <a href="create_assignment" > ➕ New Assignment</a>
+
             </li>
         </ul>
     </div>

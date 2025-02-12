@@ -11,11 +11,10 @@ import com.amnii.submission.mis.assignmentmanagementsystem.model.Student;
 
 import java.io.IOException;
 
-@WebServlet("/login")
 public class StudentLoginController extends HttpServlet {
     private String message;
     StudentService service=new StudentService();
-    Student student=new Student();
+
 
     public  StudentLoginController(){}
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,7 +29,7 @@ public class StudentLoginController extends HttpServlet {
             Student student = service.getStudentByEmail(email);
 
             session.setAttribute("email", email);
-            session.setAttribute("studentName", student.getFirstName() + " " + student.getLastName()); // Store full name
+            session.setAttribute("studentName", student.getFirstName() + " " + student.getLastName());
             session.setAttribute("successMessage", "Login successful, welcome back " + student.getFirstName());
             session.setMaxInactiveInterval(30 * 60);
 

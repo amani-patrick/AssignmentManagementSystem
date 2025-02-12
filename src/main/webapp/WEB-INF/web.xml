@@ -31,7 +31,6 @@
         <servlet-name>StudentLogin</servlet-name>
         <url-pattern>/student_login</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>TeacherLogin</servlet-name>
         <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.TeacherLoginController</servlet-class>
@@ -40,10 +39,16 @@
         <servlet-name>TeacherLogin</servlet-name>
         <url-pattern>/teacher_login</url-pattern>
     </servlet-mapping>
-
-    <!-- Set the default landing page -->
+    <servlet>
+        <servlet-name>AssignmentCreation</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.AssignmentCreationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AssignmentCreation</servlet-name>
+        <url-pattern>/create_assignment</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>/WEB-INF/LoginForm.jsp</welcome-file> <!-- Corrected the path -->
+        <welcome-file>/WEB-INF/LoginForm.jsp</welcome-file>
     </welcome-file-list>
 
 </web-app>

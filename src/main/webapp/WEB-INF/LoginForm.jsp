@@ -106,7 +106,7 @@
     <div id="student" class="role" onclick="selectRole('student')">🎓 Student</div>
     <div id="teacher" class="role" onclick="selectRole('teacher')">👩‍🏫 Teacher</div>
   </div>
-  <form action="login" method="post">
+  <form action="student_login" method="post">
     <input type="hidden" name="category" id="role" required>
     <input type="email" name="email" placeholder="📧 Enter your email" required>
     <input type="password" name="password" placeholder="🔒 Enter your password" required>

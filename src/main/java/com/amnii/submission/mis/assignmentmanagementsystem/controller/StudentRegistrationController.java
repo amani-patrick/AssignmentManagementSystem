@@ -18,7 +18,7 @@ import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.Period;
 
-@WebServlet("/register")
+
 public class StudentRegistrationController extends HttpServlet {
     private final StudentService service = new StudentService();
 
@@ -31,7 +31,6 @@ public class StudentRegistrationController extends HttpServlet {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
 
-        // Redirect teachers to the teacher registration page
         if ("teacher".equalsIgnoreCase(category)) {
             req.getRequestDispatcher("/teacher_register").forward(req, resp);
             return;
@@ -42,13 +41,13 @@ public class StudentRegistrationController extends HttpServlet {
             dob = LocalDate.parse(req.getParameter("dob"));
         } catch (Exception e) {
             req.setAttribute("message", "<p style='color:red;'>Invalid date format.</p>");
-            req.getRequestDispatcher("/WEB-INF/RegisterForm.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/StudentRegister.jsp").forward(req, resp);
             return;
         }
 
         if (dob.isAfter(LocalDate.now())) {
             req.setAttribute("message", "<p style='color:red;'>Invalid date of birth. Please enter a past date.</p>");
-            req.getRequestDispatcher("/WEB-INF/RegisterForm.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/StudentRegister.jsp").forward(req, resp);
             return;
         }
 

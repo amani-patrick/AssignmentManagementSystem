@@ -7,6 +7,7 @@ import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 import com.amnii.submission.mis.assignmentmanagementsystem.model.*;
 
+import javax.security.auth.Subject;
 import java.util.Properties;
 
 public class HibernateUtility {
@@ -30,6 +31,7 @@ public class HibernateUtility {
             configuration.setProperties(settings);
             configuration.addAnnotatedClass(Student.class);
             configuration.addAnnotatedClass(Teacher.class);
+            configuration.addAnnotatedClass(Assignment.class);
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                     .applySettings(configuration.getProperties()).build();
