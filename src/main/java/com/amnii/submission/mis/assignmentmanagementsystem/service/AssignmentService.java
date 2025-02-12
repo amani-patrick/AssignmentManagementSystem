@@ -38,7 +38,7 @@ public class AssignmentService {
         }
     }
 
-    public List<Assignment> getAssignmentsByTeacherId(Long teacherId) {
+    public List<Assignment> getAssignmentsByTeacherId(int teacherId) {
         try (Session session = sessionFactory.openSession()) {
             Query<Assignment> query = session.createQuery("FROM Assignment a WHERE a.teacher.id = :teacherId", Assignment.class);
             query.setParameter("teacherId", teacherId);

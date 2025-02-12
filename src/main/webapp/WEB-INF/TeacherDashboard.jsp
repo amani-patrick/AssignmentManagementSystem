@@ -29,7 +29,7 @@
                 🏡 Dashboard
             </li>
             <li class="flex items-center gap-3 py-3 px-4 hover:bg-gray-700 rounded cursor-pointer">
-                📚 My Assignments
+                <a href="view_assignments">📚 My Assignments</a>
             </li>
             <li class="flex items-center gap-3 py-3 px-4 hover:bg-gray-700 rounded cursor-pointer">
                 📩 Submitted Work
