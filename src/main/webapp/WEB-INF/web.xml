@@ -55,6 +55,22 @@
         <servlet-name>ViewAssignment</servlet-name>
         <url-pattern>/view_assignments</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>GetAssignment</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.StudentAssignmentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAssignment</servlet-name>
+        <url-pattern>/get_assignments</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SubmitAssignment</servlet-name>
+        <servlet-class>com.amnii.submission.mis.assignmentmanagementsystem.controller.StudentAssignmentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitAssignment</servlet-name>
+        <url-pattern>/submit_assignments</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>/WEB-INF/LoginForm.jsp</welcome-file>
     </welcome-file-list>

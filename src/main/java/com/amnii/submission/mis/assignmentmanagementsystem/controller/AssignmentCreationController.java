@@ -14,9 +14,9 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 
-@WebServlet("/create-assignment")  // Ensure the correct URL mapping
+@WebServlet("/create-assignment")
 public class AssignmentCreationController extends HttpServlet {
-    private final AssignmentService assignmentService = AssignmentService.getInstance();  // Use singleton pattern
+    private final AssignmentService assignmentService = AssignmentService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

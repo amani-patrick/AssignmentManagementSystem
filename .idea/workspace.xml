@@ -10,12 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fde0e890-d7f0-403f-88e7-4da318ac9046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/ViewAssignmentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ViewAssignment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/StudentAssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/model/Submission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/SubmissionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/TeacherLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/AssignmentCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/controller/AssignmentCreationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/AssignmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/service/AssignmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TeacherDashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TeacherDashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/util/HibernateUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amnii/submission/mis/assignmentmanagementsystem/util/HibernateUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +159,8 @@
       <updated>1739280434854</updated>
       <workItem from="1739280436064" duration="9974000" />
       <workItem from="1739298762601" duration="2907000" />
-      <workItem from="1739346582217" duration="22606000" />
+      <workItem from="1739346582217" duration="22652000" />
+      <workItem from="1739382452783" duration="7848000" />
     </task>
     <servers />
   </component>
